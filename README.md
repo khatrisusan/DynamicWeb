@@ -1,1 +1,1 @@
-# DynamicWeb
+# Responsive Gallery
