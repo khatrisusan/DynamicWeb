@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1,
+p {
+    font-family: 'Roboto', sans-serif;
+    color:green;
+    text-align: center;
+}
+h1{
+    font-size: 6vw;
+}
+h1{
+    font-size: 4vw;
+}
+div.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 25vw;
+    height: auto;
+}
+
+.wrapper {
+    background-color: lightyellow;
+}
+
+@media all and (max-width:900px) {
+
+    .wrapper {
+        background-color: blue;
+    }
+h1,
+    p {
+        color: yellow;
+    }
+    div.gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .gallery img {
+        width: 33.3vw;
+        height: auto;
+    }
+}
+
+@media all and (max-width:600px) {
+
+    .wrapper {
+        background-color: antiquewhite;
+    }
+
+    div.gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .gallery img {
+        width: 50vw;
+        height: auto;
+    }
+    h1,
+    p {
+        color: orangered;
+    }
+}
+
+
+@media all and (max-width:300px) {
+
+    .wrapper {
+        background-color: aqua;
+    }
+
+    div.gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    .gallery img {
+        width: 100vw;
+        height: auto;
+    }
+    h1,
+    p {
+        color:#0c100d;
+    }
+}
+
+
